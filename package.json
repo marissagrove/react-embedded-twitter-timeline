@@ -2,11 +2,11 @@
   "name": "react-embedded-twitter-timeline",
   "version": "0.0.4",
   "description": "React component to easily embed a Twitter timeline (https://dev.twitter.com/web/embedded-timelines).",
-  "main": "src/components/timeline.js",
+  "main": "src/components/timeline.jsx",
   "scripts": {
     "test": "karma start",
     "watch-test": "./node_modules/karma/bin/karma start karma.conf.js --auto-watch --no-single-run",
-    "build": "webpack -p | jsx timeline.js > index.js",
+    "build": "jsx timeline.jsx > timeline.js",
     "prepublish": "npm run build",
     "start": "webpack-dev-server --progress --watch"
   },
