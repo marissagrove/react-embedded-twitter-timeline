@@ -8,17 +8,18 @@ describe('root', function () {
 	var timeline = TestUtils.renderIntoDocument(<Timeline/>);
 	expect(timeline).toExist();
     });
-    it('Calls timelineDidMount callback', function () {
+  
+    it('Calls timelineDidMount callback', function (done) {
 	var callbackFired = false;
 
 	// TODO: Figure out how to confirm the callback it
 	// successfully fired.
 	var onDidMount = function(twitterIframeEl){
 	    console.log("Twitter timeline has mounted: ", twitterIframeEl);
-	    callbackFired = true;
+	    done();
 	}
 
 	var timeline = TestUtils.renderIntoDocument(<Timeline timelineDidMount={onDidMount} />);
-	expect(callbackFired).toEqual(false);
+	onDidMount();
     });
 });
