@@ -1,5 +1,4 @@
-import React from 'react';
-
+var React = require('react');
 
 var timelineDidMount = function(d,s,id) {
     var js
@@ -27,6 +26,7 @@ var Timeline = React.createClass({
 	// it mounts, just return now
 	if (!this.props.timelineDidMount)
 	    return;
+	timelineDidMount();
 
 	// Else we have to loop until the timeline loads
         var detectLoaded = function() {
