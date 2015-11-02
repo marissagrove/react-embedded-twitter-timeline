@@ -7,7 +7,6 @@
     "test": "karma start",
     "watch-test": "./node_modules/karma/bin/karma start karma.conf.js --auto-watch --no-single-run",
     "build": "webpack -p",
-    "prepublish": "npm run build && npm run test",
     "start": "webpack-dev-server --progress --watch"
   },
   "author": "Marissa Grove",
