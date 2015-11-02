@@ -6,7 +6,8 @@
   "scripts": {
     "test": "karma start",
     "watch-test": "./node_modules/karma/bin/karma start karma.conf.js --auto-watch --no-single-run",
-    "build": "webpack -p",
+    "build": "webpack -p | jsx timeline.js > index.js",
+    "prepublish": "npm run build",
     "start": "webpack-dev-server --progress --watch"
   },
   "author": "Marissa Grove",
