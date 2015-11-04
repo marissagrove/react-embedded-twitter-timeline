@@ -57,7 +57,7 @@ var Timeline = React.createClass({
     render: function() {
 	return (
 		<div className="twitter-iframe-container">
-		<a className="twitter-timeline" href="{this.props.username}" data-widget-id="{this.props.widgetId}">{this.props.tagLine}</a>
+		<a className="twitter-timeline" href={this.props.username} data-widget-id={this.props.widgetId}>{this.props.tagLine}</a>
 		</div>
 	);
     }
