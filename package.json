@@ -1,6 +1,6 @@
 {
   "name": "react-embedded-twitter-timeline",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "React component to easily embed a Twitter timeline (https://dev.twitter.com/web/embedded-timelines).",
   "main": "timeline.js",
   "scripts": {
