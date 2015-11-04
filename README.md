@@ -1,5 +1,7 @@
 ## React Embedded Twitter Timeline Component
 
+<img src="/src/images/timeline-example.png" style="max-width:100%;">
+
 ## Installation
    
    Install using <a href="https://www.npmjs.com/">npm</a> 
