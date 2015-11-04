@@ -6,7 +6,7 @@
   "scripts": {
     "test": "karma start",
     "watch-test": "./node_modules/karma/bin/karma start karma.conf.js --auto-watch --no-single-run",
-    "build": "jsx timeline.jsx > timeline.js",
+    "build": "jsx src/components/timeline.jsx > timeline.js",
     "prepublish": "npm run build",
     "start": "webpack-dev-server --progress --watch"
   },
